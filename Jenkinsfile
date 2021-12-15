@@ -11,5 +11,10 @@ pipeline {
                 sh 'python --version'
             }
         }
+        stage('execute tests') {
+            steps {
+                sh 'python test_sum_unittest.py'
+            }
+        }
     }
 }
